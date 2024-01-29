@@ -12,7 +12,7 @@ header{
   position: relative;
 }
 .container{
-  max-width: 1600px;
+  max-width: 2000px;
   padding: 0 50px;
   margin: 0 auto;
   background-color: black;
@@ -23,12 +23,15 @@ header{
   object-fit: cover;
   width: 50%;
   background-color: black;
+  padding-right: 10px;
+  padding-top: 15px;
 }
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: red;
+  padding: auto;
 }
 .navbar nav{
   display: flex;
