@@ -21,8 +21,12 @@ header{
 .logo img{
   display: block;
   object-fit: cover;
+<<<<<<< HEAD
   width: 50%;
   background-color: black;
+=======
+  width: 45%;
+>>>>>>> 56449f70b340db4698673da362dc3cbe60af8ec9
 }
 .navbar{
   display: flex;
