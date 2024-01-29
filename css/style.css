@@ -1,24 +1,30 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
 
-
-*{
+/* Global Styles */
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif; /* Corrected font family name */
 }
-header{
+
+/* Header Styles */
+header {
   background: red;
   position: relative;
 }
-.container{
+
+/* Container Styles */
+.container {
   max-width: 2000px;
   padding: 0 50px;
   margin: 0 auto;
   background-color: black;
 }
 
-.logo img{
+/* Logo Styles */
+.logo img {
   display: block;
   object-fit: cover;
   width: 50%;
@@ -26,23 +32,28 @@ header{
   padding-right: 10px;
   padding-top: 15px;
 }
-.navbar{
+
+/* Navbar Styles */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: red;
   padding: auto;
 }
-.navbar nav{
+
+.navbar nav {
   display: flex;
   align-items: center;
   padding: 1.5rem 0;
 }
-.navbar nav li{
+
+.navbar nav li {
   list-style: none;
   margin-left: 1rem;
 }
-.navbar nav li a{
+
+.navbar nav li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.1rem;
@@ -50,35 +61,49 @@ header{
   border-radius: 6px;
   transition: all 0.4s ease-in;
 }
-.navbar nav li a:hover{
+
+.navbar nav li a:hover {
   background: black;
   color: red;
 }
 
-.content{
+/* Section Styles */
+section video {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  height: 300px; /* Removed extra comma */
+}
+
+/* Content Styles */
+.content {
   display: flex;
   flex-direction: column;
   width: 60%;
   justify-content: center;
   height: 90vh;
 }
-.content h2{
+
+.content h2 {
   font-size: 4.5rem;
   color: #fff;
-  font-family: "ubuntu",sans-serif;
+  font-family: "Ubuntu", sans-serif; /* Changed font family to Ubuntu */
 }
-.content p{
+
+.content p {
   color: #fff;
   line-height: 2;
   margin-top: 1rem;
 }
-.content button{
+
+.content button {
   display: block;
   margin: 2rem 0;
   width: 21%;
   padding: 0.7rem 0;
   cursor: pointer;
-  font-size: 1rem;blaxter-inc.github.io
+  font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #ddd;
   background: inherit;
@@ -86,98 +111,113 @@ header{
   transition: all 0.3s ease-in-out;
 }
 
-.content button:hover,i:hover{
+.content button:hover,
+i:hover {
   background: red;
 }
-.content .social_icons{
+
+.content .social_icons {
   display: flex;
   justify-content: space-between;
   width: 50%;
   font-size: 1.9rem;
-  cursor: pointer;;
+  cursor: pointer;
   margin-top: 2rem;
 }
-.content .social_icons i{
+
+.content .social_icons i {
   padding: 0.6rem;
   color: #fff;
   border-radius: 5px;
   border: 1px solid #ddd;
   transition: all 0.5s ease-in-out;
 }
-.navbar .btn{
+
+/* Navbar Button Styles */
+.navbar .btn {
   font-size: 1.2rem;
   color: #fff;
   align-items: center;
   cursor: pointer;
   display: none;
 }
-@media(max-width: 1058px){
-  .container{
+
+/* Media Queries */
+@media (max-width: 1058px) {
+  .container {
     padding: 0 25px;
   }
-  .content h2{
+
+  .content h2 {
     font-size: 4rem;
   }
-  .navbar nav li a{
+
+  .navbar nav li a {
     font-size: 1rem;
   }
-  
 }
-@media(max-width: 902px){
-  .navbar .btn{
+
+@media (max-width: 902px) {
+  .navbar .btn {
     display: block;
   }
-  .navbar nav{
+
+  .navbar nav {
     position: fixed;
     flex-direction: column;
     min-width: 100%;
     min-height: 50vh;
     top: 0;
     right: -100%;
-    background: #6d67e4;
+    background: red;
     align-items: flex-start;
     justify-content: center;
   }
-  .navbar nav.active{
+
+  .navbar nav.active {
     right: 0;
     transition: all 0.5s ease-in-out;
   }
-  .navbar nav li{
+
+  .navbar nav li {
     margin: 1rem 2rem;
     border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
     width: 100%;
   }
-  .close-btn{
+
+  .close-btn {
     position: absolute;
     top: 0;
     left: 90%;
     margin: 25px;
   }
-  .content{
+
+  .content {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
     justify-content: center;
     height: 90vh;
     align-items: center;
   }
-  .content h2{
+
+  .content h2 {
     font-size: 3.5rem;
   }
-  .content button{
+
+  .content button {
     width: 50%;
   }
-  
-  .content .social_icons{
+
+  .content .social_icons {
     justify-content: space-evenly;
     width: 100%;
   }
-  
 }
-@media(max-width: 562px){
-  .content h2{
+
+@media (max-width: 562px) {
+  .content h2 {
     font-size: 2.5rem;
   }
 }
-  font-family: "poppins";
