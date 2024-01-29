@@ -209,14 +209,13 @@ i:hover {
     font-size: 4.0rem;
   }
 
-
   .content button {
     width: 50%;
   }
 
   .content .social_icons {
     justify-content: space-evenly;
-    width: 80%;
+    width: 70%;
   }
 }
 
