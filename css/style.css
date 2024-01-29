@@ -1,5 +1,5 @@
 /* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
 
 /* Global Styles */
 * {
@@ -7,6 +7,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif; /* Corrected font family name */
+}
+
+body {
+  background: black !important;
+  height: 100vh;
 }
 
 /* Header Styles */
@@ -17,10 +22,11 @@ header {
 
 /* Container Styles */
 .container {
-  max-width: 2000px;
-  padding: 0 10px;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
+  
+  display: flex;
 }
 
 /* Logo Styles */
@@ -79,10 +85,12 @@ section video {
 /* Content Styles */
 .content {
   display: flex;
+  /* flex: 1; */
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  /* height: 100%; */
 }
 
 .content h2 {
@@ -114,6 +122,19 @@ section video {
 .content button:hover,
 i:hover {
   background: red;
+}
+
+.video_container {
+  width: 50%; 
+  max-width: 500px;
+  flex-shrink: 0; 
+  margin-left: 20px;
+}
+
+.video_container video {
+  width: 100%; 
+  height: auto; 
+  max-height: 300px; 
 }
 
 .content .social_icons {
@@ -193,7 +214,6 @@ i:hover {
     top: 0;
     left: 87%;
     margin: 25px;
-    
   }
 
   .content {
@@ -206,7 +226,7 @@ i:hover {
   }
 
   .content h2 {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
 
   .content button {
