@@ -18,7 +18,7 @@ header {
 /* Container Styles */
 .container {
   max-width: 2000px;
-  padding: 0 50px;
+  padding: 0 10px;
   margin: 0 auto;
   background-color: black;
 }
@@ -80,15 +80,15 @@ section video {
 .content {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
   justify-content: center;
-  height: 90vh;
+  height: 100%;
 }
 
 .content h2 {
   font-size: 4.5rem;
   color: #fff;
-  font-family: "Ubuntu", sans-serif; /* Changed font family to Ubuntu */
+  font-family: "Ubuntu", sans-serif;
 }
 
 .content p {
@@ -119,17 +119,18 @@ i:hover {
 .content .social_icons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   font-size: 1.9rem;
   cursor: pointer;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .content .social_icons i {
-  padding: 0.6rem;
+  padding: 0.4rem;
   color: #fff;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 0.5px solid #ddd;
   transition: all 0.5s ease-in-out;
 }
 
@@ -140,6 +141,7 @@ i:hover {
   align-items: center;
   cursor: pointer;
   display: none;
+  padding: 0 7px;
 }
 
 /* Media Queries */
@@ -189,22 +191,24 @@ i:hover {
   .close-btn {
     position: absolute;
     top: 0;
-    left: 90%;
+    left: 87%;
     margin: 25px;
+    
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     justify-content: center;
-    height: 90vh;
+    height: 140vh;
     align-items: center;
   }
 
   .content h2 {
-    font-size: 3.5rem;
+    font-size: 4.0rem;
   }
+
 
   .content button {
     width: 50%;
@@ -212,7 +216,7 @@ i:hover {
 
   .content .social_icons {
     justify-content: space-evenly;
-    width: 100%;
+    width: 80%;
   }
 }
 
