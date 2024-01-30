@@ -1,72 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <title>RA: Testing Pyramid Insight</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.png" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img src="img/160.svg" alt="" />
-          </div>
-          <div class="branch" data-text="RA">RA</div>
-          <nav>
-            <div class="btn">
-              <i class="fa fa-times close-btn"></i>
-            </div>
-            
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            
-          </nav>
-          <div class="btn">
-            <i class="fa fa-bars menu-btn"></i>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>RA: Testing Pyramid Insight</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.png">
+  <style>
+    /* Additional CSS for Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar nav ul li {
+      margin-left: 20px;
+    }
+
+    .navbar nav ul li:first-child {
+      margin-left: 0;
+    }
+
+    .navbar nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .navbar nav ul li a:hover {
+      color: black;
+    }
+
+    .btn {
+      cursor: pointer;
+      display: none; /* Hide the menu button by default */
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar nav {
+        display: none; /* Hide the nav items by default on small screens */
+      }
+
+      .btn {
+        display: flex; /* Show the menu button on small screens */
+      }
+
+      .btn i {
+        font-size: 1.5rem;
+      }
+
+      .btn .close-btn {
+        display: none; /* Hide the close button by default on small screens */
+      }
+
+      .navbar nav.active {
+        display: flex; /* Show the nav items when menu button is clicked */
+        flex-direction: column;
+        background-color: red;
+        padding: 20px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      .navbar nav.active li {
+        margin: 10px 0;
+      }
+
+      .navbar nav.active .close-btn {
+        display: block; /* Show the close button when menu button is clicked */
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img src="img/160.svg" alt="">
+        </div>
+        <div class="btn">
+          <i class="fa fa-bars menu-btn"></i>
+          <i class="fa fa-times close-btn"></i>
         </div>
       </div>
-    </header>
-    <section>
-      <div class="container">
-        
-        <div class="content">
-          <br /><br />
-          <h2>Manage your projects,</h2>
-          <h2>Test your dreams,</h2>
-          <h2>Live your life.</h2>
-          <p>
-            Discover RA: Your Game-Changing AI-Driven Software Testing
-            Platform!<br />
-            Simplify and Supercharge Your Projects with a Cutting-Edge
-            Solution<br />
-            Designed for Both Tech Pros and Beginners.
-          </p>
-          <button>Explore More</button>
-          <div class="social_icons">
-            <i class="fa fa-brands fa-facebook"></i>
-            <i class="fa fa-brands fa-twitter"></i>
-            <i class="fa fa-brands fa-instagram"></i>
-            <i class="fa fa-brands fa-linkedin"></i>
-          </div>
-        </div>
-        <div class="video_container">
-          <video autoplay muted loop>
-            <source src="./img/video/animated_logo.mp4" type="video/mp4" />
-          </video>
+    </div>
+  </header>
+  <section id="home">
+    <div class="container">
+      <div class="content">
+        <br>
+        <h2>Manage your projects,</h2>
+        <h2>Test your dreams,</h2>
+        <h2>Live your life.</h2>
+        <br>
+        <p>
+          Discover RA: Your Game-Changing AI-Driven Software Testing
+          Platform!<br>
+          Simplify and Supercharge Your Projects with a Cutting-Edge
+          Solution<br>
+          Designed for Both Tech Pros and Beginners.
+        </p>
+        <br>
+        <input type="text" maxlength="100" placeholder="Enter your GitHub repository">
+        <button class="tryButton">try it now!</button>
+        <div class="social_icons">
+          <i class="fa fa-brands fa-facebook"></i>
+          <i class="fa fa-brands fa-twitter"></i>
+          <i class="fa fa-brands fa-youtube"></i>
+          <i class="fa fa-brands fa-linkedin"></i>
         </div>
       </div>
-    </section>
-    <script src="js/script.js"></script>
-  </body>
-</html>
+      <div class="video_container">
+        <!-- Video container -->
+        <video autoplay muted loop>
+          <source src="./img/video/animated_logo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Add your about content here.</p>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+  <script>
+    // JavaScript to toggle navigation menu on small screens
