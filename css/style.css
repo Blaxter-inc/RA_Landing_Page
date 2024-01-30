@@ -77,27 +77,26 @@ header {
 /* branch */
 .branch {
   font-size: 3.7rem;
-  font-weight: bold; 
+  font-weight: bold;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
-  position: relative; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .branch::before,
 .branch::after {
-  content: attr(data-text); 
+  content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden; 
-  color: black; 
-  transform: translate(-2px, -2px); 
+  overflow: hidden;
+  color: black;
+  transform: translate(-2px, -2px);
 }
 
-
 .branch::before {
-  color: red; 
-  z-index: -1; 
+  color: red;
+  z-index: -1;
 }
 
 /* Section Styles */
@@ -146,6 +145,36 @@ section video {
 .content button:hover,
 i:hover {
   background: red;
+}
+
+/* input */
+input[type="text"] {
+  background-color: red;
+  border: 1px solid white;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s; 
+}
+
+input[type="text"]::placeholder {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: white;
+  border-color: red;
+}
+
+input[type="text"]:focus::placeholder {
+  color: transparent; 
+}
+
+/* Try button */
+.trybutton {
+  
 }
 
 /* Video */
