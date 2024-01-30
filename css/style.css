@@ -118,6 +118,36 @@ input[type="text"] {
   transition: background-color 0.3s, border-color 0.3s;
 }
 
+/* input */
+input[type="text"] {
+  background-color: red;
+  border: 1px solid white;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s; 
+}padding-top: 120px;
+
+input[type="text"]::placeholder {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  background-color: white;
+  border-color: red;
+}
+
+input[type="text"]:focus::placeholder {
+  color: transparent; 
+}
+
+/* Try button */
+.trybutton {
+  
+}
+
 /* Video */
 .video_container {
   width: 100%;
@@ -222,4 +252,4 @@ input[type="text"]:focus::placeholder {
 
 .about_container {
   padding-top: 100px;
-}
+} 
