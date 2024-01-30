@@ -43,7 +43,7 @@ header {
 /* Logo Styles */
 
 .logo {
-  order: 1; /* Coloca el logo al principio */
+  order: 1; 
 }
 
 .logo img {
@@ -56,7 +56,7 @@ header {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos en los extremos */
+  justify-content: space-between; 
   align-items: center;
 }
 
@@ -126,7 +126,7 @@ input[type="text"] {
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s, border-color 0.3s; 
-}padding-top: 120px;
+}
 
 input[type="text"]::placeholder {
   font-weight: bold;
@@ -141,11 +141,6 @@ input[type="text"]:focus {
 
 input[type="text"]:focus::placeholder {
   color: transparent; 
-}
-
-/* Try button */
-.trybutton {
-  
 }
 
 /* Video */
@@ -202,6 +197,10 @@ input[type="text"]:focus::placeholder {
   transition: all 0.3s ease-in-out;
 }
 
+#about .container {
+  padding-top: 300px;
+} 
+
 /* Media Queries */
 @media (max-width: 768px) {
   .navbar {
@@ -250,6 +249,3 @@ input[type="text"]:focus::placeholder {
   }
 }
 
-.about_container {
-  padding-top: 100px;
-} 
