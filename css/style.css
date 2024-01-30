@@ -25,7 +25,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: black;
-  
+
   display: flex;
 }
 
@@ -46,6 +46,7 @@ header {
   align-items: center;
   background: red;
   padding: auto;
+  width: 100%;
 }
 
 .navbar nav {
@@ -73,24 +74,47 @@ header {
   color: red;
 }
 
+/* branch */
+.branch {
+  font-size: 3.7rem;
+  font-weight: bold; 
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  position: relative; 
+}
+
+.branch::before,
+.branch::after {
+  content: attr(data-text); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; 
+  color: black; 
+  transform: translate(-2px, -2px); 
+}
+
+
+.branch::before {
+  color: red; 
+  z-index: -1; 
+}
+
 /* Section Styles */
 section video {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 300px;
-  height: 300px; /* Removed extra comma */
+  height: 300px;
 }
 
 /* Content Styles */
 .content {
   display: flex;
-  /* flex: 1; */
   flex-direction: column;
-  /* width: 100%; */
+  width: 50%;
   justify-content: center;
-  align-items: center;
-  /* height: 100%; */
 }
 
 .content h2 {
@@ -124,19 +148,23 @@ i:hover {
   background: red;
 }
 
+/* Video */
 .video_container {
-  width: 50%; 
+  width: 50%;
   max-width: 500px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
   margin-left: 20px;
+  margin-right: 100px;
+  padding-right: 100px;
 }
 
 .video_container video {
-  width: 100%; 
-  height: auto; 
-  max-height: 300px; 
+  width: 100%;
+  height: auto;
+  max-height: 300px;
 }
 
+/* social networks */
 .content .social_icons {
   display: flex;
   justify-content: space-between;
