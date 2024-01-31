@@ -28,22 +28,20 @@ header {
   padding: 10px;
 }
 
-.content h2 {
-  font-size: 4.5rem;
+.content h2,
+.content p {
+  font-size: 1rem; /* Default font size */
   color: #fff;
   font-family: "Ubuntu", sans-serif;
 }
 
-.content p {
-  font-size: 1rem;
-  color: #fff;
-  font-family: "Ubuntu", sans-serif;
+.content h2 {
+  font-size: 4.5rem; /* Specific font size for h2 */
 }
 
 /* Logo Styles */
-
 .logo {
-  order: 1; 
+  order: 1;
 }
 
 .logo img {
@@ -56,7 +54,7 @@ header {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -67,15 +65,10 @@ header {
   padding: 0.5rem 0;
 }
 
-.navbar nav li {
-  list-style: none;
-  margin-left: 1rem;
-}
-
 .navbar nav ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 1450px;
+  padding-left: 20px; /* Adjusted padding for specific layout */
   display: flex;
 }
 
@@ -103,50 +96,10 @@ header {
   order: 3;
 }
 
-.video_container {
-  padding: auto;
-}
-
-/* input */
-input[type="text"] {
-  background-color: red;
-  border: 1px solid white;
-  height: 40px;
-  width: 750px;
-  text-align: center;
-  font-weight: bold;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-/* input */
-input[type="text"] {
-  background-color: red;
-  border: 1px solid white;
-  height: 40px;
-  text-align: center;
-  font-weight: bold;
-  transition: background-color 0.3s, border-color 0.3s; 
-}
-
-input[type="text"]::placeholder {
-  font-weight: bold;
-  color: black;
-  text-align: center;
-}
-
-input[type="text"]:focus {
-  background-color: white;
-  border-color: red;
-}
-
-input[type="text"]:focus::placeholder {
-  color: transparent; 
-}
-
 /* Video */
 .video_container {
   width: 100%;
-  height: 800px;
+  height: 400px; /* Adjusted height for smaller screens */
   overflow: hidden;
 }
 
@@ -156,24 +109,35 @@ input[type="text"]:focus::placeholder {
   object-fit: cover;
 }
 
-/* social networks */
+/* Social Networks */
 .content .social_icons {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 100%; /* Adjusted width for specific layout */
   font-size: 1.9rem;
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-input[type="text"]::placeholder {
+/* Input Styles */
+input[type="url"] {
+  background-color: red;
+  border: 1px solid white;
+  height: 30px;
+  width: 100%; /* Adjusted width for specific layout */
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="url"]::placeholder {
   font-weight: bold;
   color: black;
   text-align: center;
 }
 
-input[type="text"]:focus {
+input[type="url"]:focus {
   background-color: white;
   border-color: red;
 }
@@ -185,9 +149,9 @@ input[type="text"]:focus::placeholder {
 /* Try button */
 .tryButton {
   display: block;
-  margin: 2rem 0;
-  width: 21%;
-  padding: 0.7rem 0;
+  margin: 2rem auto; /* Centered button */
+  width: fit-content; /* Adjusted width for smaller screens */
+  padding: 10px 20px;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 4px;
@@ -197,9 +161,25 @@ input[type="text"]:focus::placeholder {
   transition: all 0.3s ease-in-out;
 }
 
-#about .container {
-  padding-top: 300px;
-} 
+.red-divider {
+  width: calc(100% - 40px); /* Adjusted width for padding on both sides */
+  border-top: 3px solid red;
+  margin: 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#discover .container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjusted padding for specific layout */
+}
+
+#discover .content {
+  background: red;
+}
 
 @media (max-width: 902px) {
   .navbar .btn {
@@ -242,7 +222,7 @@ input[type="text"]:focus::placeholder {
     flex-direction: column;
     width: 90%;
     justify-content: center;
-    height: 140vh;
+    height: auto; /* Adjusted height for smaller screens */
     align-items: center;
   }
 
