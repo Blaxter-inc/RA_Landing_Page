@@ -125,7 +125,7 @@ input[type="url"] {
   background-color: red;
   border: 1px solid white;
   height: 30px;
-  width: 100%; /* Adjusted width for specific layout */
+  width: 99%; 
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s, border-color 0.3s;
@@ -149,8 +149,8 @@ input[type="text"]:focus::placeholder {
 /* Try button */
 .tryButton {
   display: block;
-  margin: 2rem auto; /* Centered button */
-  width: fit-content; /* Adjusted width for smaller screens */
+  margin: 2rem auto; 
+  width: fit-content; 
   padding: 10px 20px;
   cursor: pointer;
   font-size: 1rem;

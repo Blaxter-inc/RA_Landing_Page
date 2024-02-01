@@ -56,12 +56,14 @@
               <label for="repoUrl">Enter your GitHub Repository URL:</label>
               <br /><br />
               <input
-                type="url"
-                id="repoUrl"
-                name="repoUrl"
-                placeholder="Type your GitHub repository here"
-                required
-              />
+  type="url"
+  id="repoUrl"
+  name="repoUrl"
+  placeholder="Type your GitHub repository here"
+  required
+  onblur="checkPlaceholder()"
+  onfocus="restorePlaceholder()"
+/>
               <button class="tryButton" type="submit">Try it now!</button>
             </form>
           </div>
@@ -82,6 +84,18 @@
     </section>
     <div class="red-divider"></div>
     <script src="js/script.js"></script>
-    <script></script>
+    <script>
+        function checkPlaceholder() {
+          var input = document.getElementById('repoUrl');
+          if (input.value === '') {
+            input.setAttribute('placeholder', 'Type your GitHub repository here');
+          }
+        }
+      
+        function restorePlaceholder() {
+          var input = document.getElementById('repoUrl');
+          input.removeAttribute('placeholder');
+        }
+      </script>
   </body>
 </html>
