@@ -110,14 +110,36 @@ header {
 }
 
 /* Social Networks */
-.content .social_icons {
+.social_icons {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Adjusted width for specific layout */
+  width: 100%;
   font-size: 1.9rem;
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+/* Estilos por defecto de los íconos */
+.social_icons i {
+  color: #fff; /* Color blanco por defecto */
+  transition: color 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Cambio de color al pasar el mouse sobre los íconos */
+.social_icons i:hover {
+  color: red; /* Color rojo al pasar el mouse */
+}
+
+.ra-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.ra-list li::before {
+  content: "•";
+  color: red; 
+  margin-right: 5px;
 }
 
 /* Input Styles */
@@ -161,15 +183,9 @@ input[type="text"]:focus::placeholder {
   transition: all 0.3s ease-in-out;
 }
 
-.ra-list {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-.ra-list li::before {
-  content: "•";
-  color: red; 
-  margin-right: 5px;
+.tryButton:hover {
+  background-color: red;
+  color: white;
 }
 
 .red-divider {
