@@ -1,101 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RA: Testing Pyramid Insight</title>
-    <meta
-      name="description"
-      content="Discover RA: Your Game-Changing AI-Driven Software Testing Platform! Simplify and Supercharge Your Projects with a Cutting-Edge Solution Designed for Both Tech Pros and Beginners."
-    />
-    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img src="img/160.svg" alt="RA Logo" />
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RA: Testing Pyramid Insight</title>
+  <meta name="description" content="Discover RA: Your Game-Changing AI-Driven Software Testing Platform! Simplify and Supercharge Your Projects with a Cutting-Edge Solution Designed for Both Tech Pros and Beginners.">
+  <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/160.svg" alt="RA Logo">
         </div>
       </div>
-    </header>
-    <section id="home">
-      <div class="container">
-        <div class="content">
-          <br />
-          <h1>Optimize your projects,</h1>
-          <h2>Boost your tests,</h2>
-          <h2>Live your life.</h2>
-          <br />
-          <p>
-            Discover RA: Your Game-Changing AI-Driven Software Testing Platform!
-            Simplify and Supercharge Your Projects with a Cutting-Edge Solution
-            Designed for Both Tech Pros and Beginners.
-            <br /> <br />
-            RA revolutionizes software testing with AI-driven solutions.
-            Simplify your projects, boost efficiency, and achieve success
-            whether you're a seasoned pro or new to tech. Explore our
-            features:<br /><br>
-            <ul class="ra-list">
-                <li>Custom Test Plans</li>
-                <li>Efficient Automation</li>
-                <li>Results Management</li>
-                <li>Real-Time Collaboration</li>
-            </ul>
-          </p>
-          <br />
-          <div>
-            <form class="form" action="clone_repository.php" method="post">
-              <label for="repoUrl">Enter your GitHub Repository URL:</label>
-              <br /><br />
-              <input
-  type="url"
-  id="repoUrl"
-  name="repoUrl"
-  placeholder="Type your GitHub repository here"
-  required
-  onblur="checkPlaceholder()"
-  onfocus="restorePlaceholder()"
-/>
-              <button class="tryButton" type="submit">Try it now!</button>
-            </form>
-          </div>
-          <div class="social_icons">
-            <i class="fa fa-brands fa-facebook"></i>
-            <i class="fa fa-brands fa-twitter"></i>
-            <i class="fa fa-brands fa-youtube"></i>
-            <i class="fa fa-brands fa-linkedin"></i>
-          </div>
-        </div>
-        <div class="video_container">
-          <!-- Video container -->
-          <video autoplay muted loop>
-            <source src="./img/video/animated_logo.mp4" type="video/mp4" />
-          </video>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <div class="content">
+        <br>
+        <h1>Optimize your projects,</h1>
+        <h2>Boost your tests,</h2>
+        <h2>Live your life.</h2>
+        <br>
+        <p>Discover RA: Your Game-Changing AI-Driven Software Testing Platform! Simplify and Supercharge Your Projects with a Cutting-Edge Solution Designed for Both Tech Pros and Beginners.<br><br><br></p>
+
+        <form class="form" method="post">
+          <label for="repoUrl">Unlock your exclusive sneak peek by joining our community today!</label><br><br>
+          <input type="text" id="email" name="email" placeholder="Your Email" required onblur="checkPlaceholder()" onfocus="restorePlaceholder()">
+          <input type="text" id="repoUrl" name="repoUrl" placeholder="Your company name" required onblur="checkPlaceholder()" onfocus="restorePlaceholder()">
+          <button class="tryButton" type="submit">Try it now!</button>
+        </form>
+
+        <div class="social_icons">
+          <i class="fa fa-brands fa-facebook"></i>
+          <i class="fa fa-brands fa-twitter"></i>
+          <i class="fa fa-brands fa-youtube"></i>
+          <i class="fa fa-brands fa-linkedin"></i>
         </div>
       </div>
-    </section>
-    <div class="red-divider"></div>
-    <script src="js/script.js"></script>
-    <script>
-        function checkPlaceholder() {
-          var input = document.getElementById('repoUrl');
-          if (input.value === '') {
-            input.setAttribute('placeholder', 'Type your GitHub repository here');
-          }
-        }
-      
-        function restorePlaceholder() {
-          var input = document.getElementById('repoUrl');
-          input.removeAttribute('placeholder');
-        }
-      </script>
-  </body>
+
+      <div class="video_container">
+        <!-- Video container -->
+        <video autoplay muted loop>
+          <source src="./img/video/animated_logo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <div class="red-divider"></div>
+
+  <script src="js/script.js"></script>
+  <script>
+    function checkPlaceholder() {
+      var input = document.getElementById("repoUrl");
+      if (input.value === "") {
+        input.setAttribute("placeholder", "Your company name");
+      }
+    }
+
+    function restorePlaceholder() {
+      var input = document.getElementById("repoUrl");
+      input.removeAttribute("placeholder");
+    }
+  </script>
+</body>
 </html>

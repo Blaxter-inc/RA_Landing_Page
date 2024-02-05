@@ -1,13 +1,13 @@
-/* Importing Google Fonts */
+/* Estilos generales */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@400;500;700&display=swap");
 
-/* Global Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Estilos para el cuerpo */
 body {
   font-family: "Poppins", sans-serif;
   background-color: black;
@@ -15,12 +15,12 @@ body {
   height: 100vh;
 }
 
-/* Header Styles */
+/* Estilos para el encabezado */
 header {
   background-color: red;
 }
 
-/* Container Styles */
+/* Estilos para el contenedor principal */
 .container {
   display: flex;
   justify-content: space-between;
@@ -28,18 +28,19 @@ header {
   padding: 10px;
 }
 
+/* Estilos para el contenido */
 .content h2,
 .content p {
-  font-size: 1rem; /* Default font size */
+  font-size: 1rem;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
 }
 
 .content h2 {
-  font-size: 4.5rem; /* Specific font size for h2 */
+  font-size: 4.5rem;
 }
 
-/* Logo Styles */
+/* Estilos para el logo */
 .logo {
   order: 1;
 }
@@ -51,7 +52,7 @@ header {
   object-fit: cover;
 }
 
-/* Navbar Styles */
+/* Estilos para la barra de navegación */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -68,7 +69,7 @@ header {
 .navbar nav ul {
   list-style-type: none;
   margin: 0;
-  padding-left: 20px; 
+  padding-left: 20px;
   display: flex;
 }
 
@@ -90,16 +91,17 @@ header {
   color: black;
 }
 
+/* Estilos para el botón */
 .btn {
   cursor: pointer;
   display: none;
   order: 3;
 }
 
-/* Video */
+/* Estilos para el contenedor de video */
 .video_container {
   width: 100%;
-  height: 400px; /* Adjusted height for smaller screens */
+  height: 400px;
   overflow: hidden;
 }
 
@@ -109,35 +111,52 @@ header {
   object-fit: cover;
 }
 
-/* Social Networks */
+/* Estilos para los íconos sociales */
 .social_icons {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Adjusted width for specific layout */
-  font-size: 1.9rem;
+  width: 100%;
+  font-size: 2.5rem;
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  padding-left: 15px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Input Styles */
-input[type="url"] {
+/* Estilos individuales para cada ícono social */
+.social_icons i {
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efecto hover para cada ícono social */
+.social_icons i:hover {
+  color: red;
+}
+
+/* Estilos para los inputs de texto en el formulario */
+.form input[type="text"] {
+  margin-bottom: 10px; /* Ajusta este valor según sea necesario para la separación deseada */
+}
+
+input[type="text"] {
   background-color: red;
   border: 1px solid white;
   height: 30px;
-  width: 100%; /* Adjusted width for specific layout */
+  width: 40%;
   text-align: center;
   font-weight: bold;
   transition: background-color 0.3s, border-color 0.3s;
+  padding-left: 0px;
 }
 
-input[type="url"]::placeholder {
+input[type="text"]::placeholder {
   font-weight: bold;
   color: black;
   text-align: center;
 }
 
-input[type="url"]:focus {
+input[type="text"]:focus {
   background-color: white;
   border-color: red;
 }
@@ -146,11 +165,11 @@ input[type="text"]:focus::placeholder {
   color: transparent;
 }
 
-/* Try button */
+/* Estilos para el botón "Try" */
 .tryButton {
   display: block;
-  margin: 2rem auto; /* Centered button */
-  width: fit-content; /* Adjusted width for smaller screens */
+  margin: 2rem auto;
+  width: fit-content;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 1rem;
@@ -158,9 +177,16 @@ input[type="text"]:focus::placeholder {
   border: 1px solid #ddd;
   background: inherit;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* Efecto hover para el botón "Try" */
+.tryButton:hover {
+  background-color: red;
+  color: black;
+}
+
+/* Estilos para la lista de puntos */
 .ra-list {
   list-style-type: none;
   padding-left: 20px;
@@ -168,93 +194,43 @@ input[type="text"]:focus::placeholder {
 
 .ra-list li::before {
   content: "•";
-  color: red; 
+  color: red;
   margin-right: 5px;
 }
 
+/* Separador rojo */
 .red-divider {
-  border-top: 3px solid red;
-  margin: 20px 0;
+  border-top: 6px solid red;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
-/* Media Queries */
-@media (max-width: 1024px) {
-
-  
+/* Estilos responsivos */
+@media (max-width: 768px) {
   .tryButton {
-    font-size: 0.8rem; /* Reducir el tamaño de la fuente */
-    padding: 8px 16px; /* Reducir el padding */
+    font-size: 0.7rem;
+    padding: 6px 12px;
   }
 
-  .social_icons i {
-    font-size: 1.5rem; /* Reducir el tamaño de los iconos */
-  }
-}
-
-
-/* Video */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Cambia la dirección del flexbox a columna */
-  }
-
-  .video_container {
-    order: 2; /* Cambia el orden del contenedor de video */
-    margin-top: 20px; /* Agrega un margen superior */
-  }
-}
-
-/* Social Networks */
-.social_icons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%; /* Ajuste de ancho */
-  font-size: 1.5rem; /* Ajuste de tamaño de fuente */
-  cursor: pointer;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-/* Media Query para ajustar los iconos en pantallas más pequeñas */
-@media (max-width: 768px) {
   .social_icons {
-    justify-content: space-around; /* Cambia el espacio entre los íconos */
+    justify-content: space-around;
   }
-}
-
-/* Input Styles */
-/* ... */
-
-/* Try button */
-.tryButton {
-  display: block;
-  margin: 2rem auto;
-  width: 80%; /* Ajuste de ancho */
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1.2rem; /* Ajuste de tamaño de fuente */
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  background: inherit;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 480px) {
-  /* Estilos para dispositivos de pantalla pequeña (móviles pequeños) */
-
   .logo {
-    display: none; /* Ocultar el logo en dispositivos de pantalla pequeña */
+    display: none;
   }
 
   .tryButton {
-    font-size: 0.6rem; /* Reducir aún más el tamaño de la fuente */
-    padding: 4px 8px; /* Reducir aún más el padding */
+    font-size: 0.6rem;
+    padding: 4px 8px;
   }
 
-  .social_icons i {
-    font-size: 1rem; /* Reducir aún más el tamaño de los iconos */
+  .social_icons {
+    font-size: 1rem;
   }
 }
