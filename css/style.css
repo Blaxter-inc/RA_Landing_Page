@@ -23,6 +23,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  max-width: 1200px; /* Added max-width property */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .content h1,
@@ -203,7 +205,7 @@ input[type="text"]:focus::placeholder {
 
 .footer {
   color: white;
-  text-align: center; /* Center text in the footer */
+  text-align: center;
 }
 
 .footer p {
@@ -222,7 +224,7 @@ input[type="text"]:focus::placeholder {
   border: 1px solid #ddd;
   border-radius: 5px;
   margin: 10px;
-  overflow: hidden; /* Prevent text from overflowing */
+  overflow: hidden;
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -235,8 +237,7 @@ input[type="text"]:focus::placeholder {
   color: red;
 }
 
-/* Media queries for larger screens */
-@media (min-width: 9026) {
+@media (min-width: 768px) {
   .benefit {
     width: calc(50% - 20px);
   }
@@ -248,11 +249,10 @@ input[type="text"]:focus::placeholder {
 
   .social_icons {
     justify-content: space-around;
-    padding-bottom: 0px; /* Updated padding for social icons */
+    padding-bottom: 0px;
   }
 }
 
-/* Media queries for smaller screens */
 @media (max-width: 480px) {
   .logo {
     display: none;
@@ -269,22 +269,22 @@ input[type="text"]:focus::placeholder {
 
   .video_container {
     width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
-    order: 3; /* Cambia el orden del contenedor de video */
-    margin-top: 20px; /* Agrega margen superior para separar el video de los íconos sociales */
+    height: auto;
+    order: 3;
+    margin-top: 20px;
   }
 
   .content {
-    flex-direction: column; /* Cambia la dirección de los elementos en el contenedor principal */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .footer {
-    text-align: center; /* Center text in the footer */
+    text-align: center;
   }
 
   .benefit {
-    width: 100%; /* Adjust width to 100% to stack benefits on top of each other */
+    width: 100%;
   }
 }
