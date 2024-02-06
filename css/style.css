@@ -203,6 +203,10 @@ input[type="text"]:focus::placeholder {
   width: 100%;
 }
 
+h3 {
+  padding-left: 18.5%;
+}
+
 .footer {
   color: white;
   text-align: center;
@@ -212,10 +216,16 @@ input[type="text"]:focus::placeholder {
   margin: 0;
 }
 
+.footer .container {
+  padding-left: 18%;
+}
+
 .benefits {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-left: 18% ;
+  padding-right: 18% ;
 }
 
 .benefit {
