@@ -247,6 +247,40 @@ h3 {
   color: red;
 }
 
+/*  */
+
+.motivations {
+  display: flex;
+  justify-content: space-between; /* Use space-between to separate items */
+  padding-left: 18%;
+  padding-right: 18%;
+  flex-wrap: wrap; /* Allow wrapping if content exceeds width */
+  ;
+}
+
+.motivation {
+  width: calc(60% - 300px); /* Adjust width to 50% minus margin */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.motivation:hover {
+  border-color: red;
+  color: red;
+}
+
+.motivation mission {
+  padding-left: 50%;
+}
+
+.motivation vision {
+  padding-left: 50%;
+}
+
 @media (min-width: 768px) {
   .benefit {
     width: calc(50% - 20px);
