@@ -281,6 +281,17 @@ h3 {
   padding-left: 50%;
 }
 
+.data-link {
+  color: white; /* Color blanco */
+  font-size: 20px; /* Tamaño de letra aumentado */
+  text-decoration: none; /* Eliminar subrayado por defecto */
+}
+
+.data-mention {
+  
+}
+
+
 @media (min-width: 768px) {
   .benefit {
     width: calc(50% - 20px);
