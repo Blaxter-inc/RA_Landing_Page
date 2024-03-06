@@ -21,25 +21,18 @@
     </div>
   </header>
 
-  <section id="home">
+  <section id="home" class="section">
     <div class="container">
       <div class="content">
-        <br>
         <h1>Optimize your projects,</h1>
         <h2>Boost your tests,</h2>
         <h2>Live your life.</h2>
-        <br>
-        <p>Discover RA: Your Game-Changing AI-Driven Software Testing Platform! Simplify and Supercharge Your Projects with a Cutting-Edge Solution Designed for Both Tech Pros and Beginners.<br><br><br></p>
+        <p>Discover RA: Your Game-Changing AI-Driven Software Testing Platform! Simplify and Supercharge Your Projects with a Cutting-Edge Solution Designed for Both Tech Pros and Beginners.</p>
         <form class="form" method="post">
           <label for="repoUrl">Unlock your exclusive sneak peek by joining our community today!</label><br><br>
-          <div>
-          <input type="text" id="email" name="email" placeholder="Your Email" required onblur="checkPlaceholder()" onfocus="restorePlaceholder()">
-          <input type="text" id="company" name="repoUrl" placeholder="Your company name" required onblur="checkPlaceholder()" onfocus="restorePlaceholder()">
-          </div>
-          <div class="button_container">
-            <button class="tryButton" type="submit">Explore Now</button>
-          </div>
-          
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="text" id="company" name="repoUrl" placeholder="Your company name" required>
+          <button class="tryButton" type="submit">Explore Now</button>
         </form>
 
         <div class="social_icons">
@@ -51,7 +44,6 @@
       </div>
 
       <div class="video_container">
-        <!-- Video container -->
         <video autoplay muted loop>
           <source src="./img/video/animated_logo.mp4" type="video/mp4">
         </video>
@@ -59,101 +51,84 @@
     </div>
   </section>
 
-  <div class="red-divider">
-    <section id="motivations">
-      <div class="motivation mission">
+  <section id="motivations" class="section red-divider">
+    <div class="container">
+      <div id="missionBox" class="motivation mission">
         <h3>Our Mission:</h3>
-        <p>RA seeks to be the industry's leading tool for efficient and automated testing that guarantees software quality in all types of web projects. 
-          We simplify and streamline the testing process so development teams can deliver high-quality software to their customers more quickly and with greater satisfaction.</p>
+        <p>RA seeks to be the industry's leading tool for efficient and automated testing that guarantees software quality in all types of web projects. We simplify and streamline the testing process so development teams can deliver high-quality software to their customers more quickly and with greater satisfaction.</p>
       </div>
-      <div class="motivation vision">
+      <div id="visionBox" class="motivation vision">
         <h3>Our Vision:</h3>
-        <p>To be the world's leading software testing platform, recognized for its high capacity to:
-
-          Simplify and automate the software testing process for teams of all sizes and experience levels.
-          
-          Ensure software quality through thorough and accurate testing.
-          
-          Accelerate software development by reducing testing time and cost.
-          Improve customer satisfaction by delivering high-quality software that meets customer expectations.</p>
-      </div>
-    </section>
-    <div class="red-divider">
-    <section id="benefits">
-    <br>
-    <h3>Discover the Benefits:</h3>
-    <div class="benefits">
-      <div class="benefit">
-        <h4>Customized Test Plans</h4>
-        <p>Design plans tailored to your project's needs.</p>
-      </div>
-      <div class="benefit">
-        <h4>Efficient Execution</h4>
-        <p>Perform automated tests for quality and performance assurance.</p>
-      </div>
-      <div class="benefit">
-        <h4>Results Management</h4>
-        <p>Organize and highlight issues with test results.</p>
-      </div>
-      <div class="benefit">
-        <h4>Real-Time Collaboration</h4>
-        <p>Facilitate communication and teamwork among your teams.</p>
-      </div>
-      <div class="benefit">
-        <h4>Security and Privacy</h4>
-        <p>Ensure comprehensive data protection for your projects.</p>
+        <p>To be the world's leading software testing platform, recognized for its high capacity to:</p>
+        <ul>
+          <li>Simplify and automate the software testing process for teams of all sizes and experience levels.</li>
+          <li>Ensure software quality through thorough and accurate testing.</li>
+          <li>Accelerate software development by reducing testing time and cost.</li>
+          <li>Improve customer satisfaction by delivering high-quality software that meets customer expectations.</li>
+        </ul>
       </div>
     </div>
-  </div>
-<!--  -->
-</section>
-<div class="red-divider">
-<section id="data-mentions">
-<br>
-<h3>Think for a moment:</h3>
-<div class="data-mentions">
-  <div class="benefit">
-    <p>Projects with a high level of test automation reported a defect rate 4 times lower than
-      those with a low level of automation.</p>
-      <h4><a href="https://books.google.com.co/books?hl=en&lr=&id=oEPjYVfUR1wC&oi=fnd&pg=PR9&dq=The+Economics+of+Software+Quality&ots=bcseLukMFK&sig=kuejCbsKSlsAFgAonUFGFDDXi9M&redir_esc=y#v=onepage&q=The%20Economics%20of%20Software%20Quality&f=false" class="data-link">"The Impact of Test Automation on Software Quality" by Capers Jones (2014)”</a></h4>
-  </div>
-  <div class="benefit">
-    <p>Efficient test management can reduce development cycle time by 20% and testing costs by 30%.</p>
-      <h4><a href="https://www.ibm.com/products/ibm-engineering-test-management" class="data-link">"The Benefits of Effective Test Management" by IBM (2019)"</a></h4>
-  </div>
-  <div class="benefit">
-    <p> AI won’t replace all software developers and engineers. AI will help developers accomplish more by freeing them up to work on higher-level problems. 
-      Companies that invest in increased
-      automation to chain tools and AI together will amplify the impact human developers make.</p>
-      <h4><a href="https://www.pluralsight.com/resources/blog/leadership/AI-in-software-development#:~:text=AI%20won't%20replace%20all,the%20impact%20human%20developers%20make." class="data-link"> "AI in software development: Key opportunities + challenges by pluralsight"</a></h4>
-  </div>
-  <div class="benefit">
-    <p>Developers are building with generative AI in big numbers.</p>
-      <h4><a href="https://github.blog/2023-11-08-the-state-of-open-source-and-ai/?utm_source=banner&utm_medium=github&utm_campaign=octoverse" class="data-link">"The state of open source and rise of AI in 2023 by Github (2023)"</a></h4>
-  </div>
-</div>
-</div>
-</section>
+  </section>
+
+  <section id="benefits" class="section red-divider">
+    <div class="container">
+      <h3>Discover the Benefits:</h3>
+      <div class="benefits">
+        <div class="benefit customized">
+          <h4>Customized Test Plans</h4>
+          <p>Design plans tailored to your project's needs.</p>
+        </div>
+        <div class="benefit efficient">
+          <h4>Efficient Execution</h4>
+          <p>Perform automated tests for quality and performance assurance.</p>
+        </div>
+        <div class="benefit Management">
+          <h4>Results Management</h4>
+          <p>Organize and highlight issues with test results.</p>
+        </div>
+        <div class="benefit Real-Time">
+          <h4>Real-Time Collaboration</h4>
+          <p>Facilitate communication and teamwork among your teams.</p>
+        </div>
+        <div class="benefit Security">
+          <h4>Security and Privacy</h4>
+          <p>Ensure comprehensive data protection for your projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="data-mentions" class="section red-divider">
+    <div class="container">
+      <h3>Think for a moment:</h3>
+      <div class="data-mentions">
+        <div class="data-mention">
+          <p>Projects with a high level of test automation reported a defect rate 4 times lower than those with a low level of automation.</p>
+          <h4><a href="https://books.google.com.co/books?hl=en&lr=&id=oEPjYVfUR1wC&oi=fnd&pg=PR9&dq=The+Economics+of+Software+Quality&ots=bcseLukMFK&sig=kuejCbsKSlsAFgAonUFGFDDXi9M&redir_esc=y#v=onepage&q=The%20Economics%20of%20Software%20Quality&f=false" class="data-link">"The Impact of Test Automation on Software Quality" by Capers Jones (2014)</a></h4>
+        </div>
+        <!-- Other data mentions... -->
+        <div class="data-mention">
+          <p>Efficient test management can reduce development cycle time by 20% and testing costs by 30%.
+            "The Benefits of Effective Test Management" by IBM (2019)"</p>
+          <h4><a href="https://www.ibm.com/products/ibm-engineering-test-management" class="data-link">"The Benefits of Effective Test Management" by IBM (2019)"</a></h4>
+        </div>
+        <div class="data-mention">
+          <p>AI won’t replace all software developers and engineers. AI will help developers accomplish more by freeing them up to work on higher-level problems. Companies that invest in increased automation to chain tools and AI together will amplify the impact human developers make.</p>
+          <h4><a href="https://www.pluralsight.com/resources/blog/leadership/AI-in-software-development#:~:text=AI%20won't%20replace%20all,the%20impact%20human%20developers%20make." class="data-link">"AI in software development: Key opportunities + challenges by Pluralsight"</a></h4>
+        </div>
+        <div class="data-mention">
+          <p>Developers are building with generative AI in big numbers.</p>
+          <h4><a href="https://github.blog/2023-11-08-the-state-of-open-source-and-ai/?utm_source=banner&utm_medium=github&utm_campaign=octoverse" class="data-link">""The state of open source and rise of AI in 2023 by Github (2023)""</a></h4>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
       <p>&copy; 2024 RA: Testing Pyramid Insight. All rights reserved.</p>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
-  <script>
-    function checkPlaceholder() {
-      var input = document.getElementById("repoUrl");
-      if (input.value === "") {
-        input.setAttribute("placeholder", "Your company name");
-      }
-    }
-
-    function restorePlaceholder() {
-      var input = document.getElementById("repoUrl");
-      input.removeAttribute("placeholder");
-    }
-  </script>
 </body>
 </html>

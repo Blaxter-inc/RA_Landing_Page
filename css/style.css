@@ -11,7 +11,10 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
-  height: 100vh;
+}
+
+.section {
+  padding: 40px 0;
 }
 
 header {
@@ -23,21 +26,21 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  max-width: 1200px; /* Added max-width property */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .content h1,
 .content h2 {
-  font-size: 1.5rem; /* Base font size for headings */
+  font-size: 1.5rem;
 }
 
 .content h2 {
-  font-size: 3rem; /* Larger font size for h2 */
+  font-size: 3rem;
 }
 
 .content p {
-  font-size: 0.9rem; /* Base font size for paragraphs */
+  font-size: 0.9rem;
 }
 
 .logo {
@@ -126,11 +129,13 @@ header {
   color: red;
 }
 
-.form input[type="text"] {
+.form input[type="text"],
+.form input[type="email"] {
   margin-bottom: 10px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
   background-color: red;
   border: 1px solid white;
   height: 30px;
@@ -141,18 +146,21 @@ input[type="text"] {
   padding-left: 0px;
 }
 
-input[type="text"]::placeholder {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
   font-weight: bold;
   color: black;
   text-align: center;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus {
   background-color: white;
   border-color: red;
 }
 
-input[type="text"]:focus::placeholder {
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
   color: transparent;
 }
 
@@ -224,12 +232,12 @@ h3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-left: 18% ;
-  padding-right: 18% ;
+  padding-left: 18%;
+  padding-right: 18%;
 }
 
 .benefit {
-  width: 30%;
+  width: 40%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -248,19 +256,38 @@ h3 {
   color: red;
 }
 
-/*  */
+/* Motivations */
 
 .motivations {
   display: flex;
-  justify-content: space-between; /* Use space-between to separate items */
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-left: 18%;
   padding-right: 18%;
-  flex-wrap: wrap; /* Allow wrapping if content exceeds width */
-  ;
 }
 
 .motivation {
-  width: calc(60% - 300px); /* Adjust width to 50% minus margin */
+  width: 50%; /* Adjusted to occupy full width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.motivation h3 {
+  padding-left: 0px;
+  color: white;
+}
+
+.motivation:hover {
+  border-color: red;
+  color: red;
+}
+
+#missionBox {
+  width: 50%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -269,40 +296,31 @@ h3 {
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.motivation h3 {
-  color: white
-}
-
-.motivation:hover {
-  border-color: red;
-  color: red;
-}
-
-.motivation mission {
-  padding-left: 50%;
-}
-
-.motivation vision {
-  padding-left: 50%;
+#visionBox {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .data-link {
-  color: white; /* Color blanco */
-  font-size: 20px; /* Tamaño de letra aumentado */
-  text-decoration: none; /* Eliminar subrayado por defecto */
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .data-mention {
   display: flex;
-  justify-content: space-between; /* Use space-between to separate items */
+  flex-direction: column; /* Change to column for small screens */
   padding-left: 18%;
   padding-right: 18%;
-  flex-wrap: wrap; /* Allow wrapping if content exceeds width */
-  ;
 }
 
 .data-mention {
-  width: calc(60% - 300px); /* Adjust width to 50% minus margin */
+  width: 100%; /* Adjusted to occupy full width */
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -316,9 +334,7 @@ h3 {
   color: red;
 }
 
-
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .benefit {
     width: calc(50% - 20px);
   }
@@ -367,5 +383,40 @@ h3 {
 
   .benefit {
     width: 100%;
+  }
+
+  /* Added styles for better responsiveness on small screens */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    order: 1;
+    margin-top: 10px;
+  }
+
+  .logo {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .benefits,
+  .motivations {
+    flex-direction: column;
+  }
+
+  .benefit,
+  .motivation {
+    width: 100%;
+  }
+
+  h3 {
+    padding-left: 0;
+    text-align: center;
   }
 }
