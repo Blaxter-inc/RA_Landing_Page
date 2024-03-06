@@ -227,13 +227,10 @@ h3 {
 .footer .container {
   padding-left: 18%;
 }
-
 .benefits {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  padding-left: 18%;
-  padding-right: 18%;
+  justify-content: center;
 }
 
 .benefit {
@@ -254,6 +251,37 @@ h3 {
 .benefit:hover {
   border-color: red;
   color: red;
+}
+
+.benefit.customized {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.benefit.efficient {
+  width: 45%;
+  margin-left: 2%;
+  margin-right: 0%;
+}
+
+.benefit.Management {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.benefit.Real-Time {
+  width: 45%;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+.benefit.Security {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Motivations */
