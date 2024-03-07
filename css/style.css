@@ -25,8 +25,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  max-width: 1200px;
+  
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -255,8 +255,8 @@ h3 {
 
 .benefit.customized {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 3%;
+  margin-right: 50%;
 }
 
 .benefit.efficient {
@@ -266,22 +266,22 @@ h3 {
 }
 
 .benefit.Management {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-left: 3%;
+  margin-right: 50%;
   margin-top: 10px;
 }
 
 .benefit.Real-Time {
   width: 45%;
-  margin-left: 5%;
-  margin-right: 3%;
+  margin-left: 2%;
+  margin-right: 0%;
 }
 
 .benefit.Security {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 3%;
+  margin-right: 50%;
 }
 
 /* Motivations */
